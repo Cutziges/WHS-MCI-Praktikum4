@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="scene" stylesheets="@praktikum4.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="praktikum4.FXMLDocumentController">
+   <children>
+      <MenuBar fx:id="menubar" prefHeight="29.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Datei">
+            <items>
+              <MenuItem mnemonicParsing="true" text="Öffnen" fx:id="open" accelerator="Shortcut+O"/>
+              <MenuItem mnemonicParsing="true" text="Speichern" fx:id="save" accelerator="Shortcut+S"/>
+              <MenuItem mnemonicParsing="true" text="Speichern unter..." fx:id="saveas" accelerator="Shift+Shortcut+S"/>
+              <MenuItem mnemonicParsing="true" text="Beenden" fx:id="exit" onAction="#exitAction" accelerator="Shortcut+E"/>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Wein">
+            <items>
+              <MenuItem mnemonicParsing="true" text="Aufnehmen" fx:id="add" />
+              <MenuItem mnemonicParsing="true" text="Ändern" fx:id="change" />
+              <MenuItem mnemonicParsing="true" text="Löschen" fx:id="delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ansicht">
+            <items>
+              <MenuItem mnemonicParsing="true" text="Liste" fx:id="list" />
+              <MenuItem mnemonicParsing="true" text="Details" fx:id="details" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Info" fx:id="info" accelerator="F1"/>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
